@@ -1,6 +1,6 @@
 {% set name = "mechanize" %}
-{% set version = "0.2.5" %}
-{% set sha256 = "2e67b20d107b30c00ad814891a095048c35d9d8cb9541801cebe85684cc84766" %}
+{% set version = "0.3.1" %}
+{% set sha256 = "45a207bdbf78046dd56381162526b0da09d6844ba60cf7feaad4c2816bbc7cbc" %}
 
 package:
   name: {{ name|lower }}
@@ -20,21 +20,24 @@ requirements:
   build:
     - python
     - setuptools
+    - html5lib
   run:
     - python
+    - html5lib
 
 test:
   imports:
     - mechanize
 
 about:
-  home: http://wwwsearch.sourceforge.net/mechanize/
-  license: BSD 3-Clause or ZPL 2.1
-  license_file: COPYING.txt
+  home: https://github.com/python-mechanize/mechanize  
+  license: BSD 3-Clause
+  license_file: LICENSE
   summary: 'Stateful programmatic web browsing.'
   description: |
-    Stateful programmatic web browsing in Python, after Andy Lester's Perl module WWW::Mechanize.
-  dev_url: https://github.com/jjlee/mechanize
+    Stateful programmatic web browsing in Python. Browse pages programmatically with easy HTML form filling and clicking of links.
+  dev_url: https://github.com/python-mechanize/mechanize
+  doc_url: https://mechanize.readthedocs.io
 
 extra:
   recipe-maintainers:
