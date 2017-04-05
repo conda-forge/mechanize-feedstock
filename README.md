@@ -1,15 +1,15 @@
 About mechanize
 ===============
 
-Home: http://wwwsearch.sourceforge.net/mechanize/
+Home: https://github.com/python-mechanize/mechanize
 
-Package license: BSD 3-Clause or ZPL 2.1
+Package license: BSD 3-Clause
 
 Feedstock license: BSD 3-Clause
 
 Summary: Stateful programmatic web browsing.
 
-Stateful programmatic web browsing in Python, after Andy Lester's Perl module WWW::Mechanize.
+Stateful programmatic web browsing in Python. Browse pages programmatically with easy HTML form filling and clicking of links.
 
 
 Current build status
