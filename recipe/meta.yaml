@@ -1,6 +1,6 @@
 {% set name = "mechanize" %}
-{% set version = "0.3.1" %}
-{% set sha256 = "45a207bdbf78046dd56381162526b0da09d6844ba60cf7feaad4c2816bbc7cbc" %}
+{% set version = "0.3.3" %}
+{% set sha256 = "74fe5cbcd237cc2cc0c9843dcfd9033097d91bf43c42de024701a1ee7d9cab8c" %}
 
 package:
   name: {{ name|lower }}
@@ -20,10 +20,9 @@ requirements:
   build:
     - python
     - setuptools
-    - html5lib
   run:
     - python
-    - html5lib
+    - html5lib >=0.999999999
 
 test:
   imports:
