@@ -1,6 +1,6 @@
 {% set name = "mechanize" %}
-{% set version = "0.3.6" %}
-{% set sha256 = "654e705157156c1f316601ea4f7ab27e96713a8a4dabe1604e6cc8d48e0aa1e8" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "8954081ef3149794920f0b9ead8af6927059b6ac76d81abc8a4d6366c6fa86ba" %}
 
 package:
   name: {{ name|lower }}
@@ -12,7 +12,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
+  number: 0
   skip: True  # [py3k]
   script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed --no-cache-dir -vvv"
 
