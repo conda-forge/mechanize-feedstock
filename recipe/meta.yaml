@@ -1,6 +1,6 @@
 {% set name = "mechanize" %}
-{% set version = "0.4.1" %}
-{% set sha256 = "8954081ef3149794920f0b9ead8af6927059b6ac76d81abc8a4d6366c6fa86ba" %}
+{% set version = "0.4.2" %}
+{% set sha256 = "b680ca1b4fabe5ef52024d120f40b8e2ed7d175ed4d67225d2c477dac7c7a58b" %}
 
 package:
   name: {{ name|lower }}
