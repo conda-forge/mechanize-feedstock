@@ -1,6 +1,6 @@
 {% set name = "mechanize" %}
-{% set version = "0.4.5" %}
-{% set sha256 = "6355c11141f6d4b54a17fc2106944806b5db2711e60b120d15d83db438c333fd" %}
+{% set version = "0.4.6" %}
+{% set sha256 = "d16cea241253b5eb6380bf8a46627cad91d1f2c3f93a33279a31ce276d6c5d44" %}
 
 package:
   name: {{ name|lower }}
@@ -14,12 +14,12 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 
 requirements:
   host:
-    - python 
+    - python
     - pip
     - setuptools
   run:
@@ -31,10 +31,10 @@ test:
     - mechanize
 
 about:
-  home: https://github.com/python-mechanize/mechanize  
+  home: https://github.com/python-mechanize/mechanize
   license: BSD 3-Clause
   license_file: LICENSE
-  summary: 'Stateful programmatic web browsing.'
+  summary: Stateful programmatic web browsing.
   description: |
     Stateful programmatic web browsing in Python. Browse pages programmatically with easy HTML form filling and clicking of links.
   dev_url: https://github.com/python-mechanize/mechanize
