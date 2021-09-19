@@ -3,7 +3,7 @@ About mechanize
 
 Home: https://github.com/python-mechanize/mechanize
 
-Package license: BSD 3-Clause
+Package license: BSD-3-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mechanize-feedstock/blob/master/LICENSE.txt)
 
