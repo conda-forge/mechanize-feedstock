@@ -1,11 +1,11 @@
-About mechanize
-===============
+About mechanize-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mechanize-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-mechanize/mechanize
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mechanize-feedstock/blob/main/LICENSE.txt)
 
 Summary: Stateful programmatic web browsing.
 
