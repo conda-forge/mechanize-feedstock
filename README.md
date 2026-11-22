@@ -11,10 +11,9 @@ Summary: Stateful programmatic web browsing.
 
 Development: https://github.com/python-mechanize/mechanize
 
-Documentation: https://mechanize.readthedocs.io
+Documentation: https://mechanize.readthedocs.io/
 
 Stateful programmatic web browsing in Python. Browse pages programmatically with easy HTML form filling and clicking of links.
-
 
 Current build status
 ====================
