@@ -1,0 +1,49 @@
+schema_version: 1
+
+context:
+  version: "0.4.11"
+
+package:
+  name: mechanize
+  version: ${{ version }}
+
+source:
+  url: https://files.pythonhosted.org/packages/source/m/mechanize/mechanize-${{ version }}.tar.gz
+  sha256: 544d1e5c97a03f20e726551fea80b5fe46db720491746923e89c9c6960c4b7e8
+
+build:
+  number: 0
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools
+  run:
+    - python >=${{ python_min }}
+    - html5lib >=0.999999999
+
+tests:
+  - python:
+      imports:
+        - mechanize
+      pip_check: false
+      python_version:
+        - ${{ python_min }}
+        - '*'
+
+about:
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: Stateful programmatic web browsing.
+  description: |
+    Stateful programmatic web browsing in Python. Browse pages programmatically with easy HTML form filling and clicking of links.
+  homepage: https://github.com/python-mechanize/mechanize
+  repository: https://github.com/python-mechanize/mechanize
+  documentation: https://mechanize.readthedocs.io
+
+extra:
+  recipe-maintainers:
+    - synapticarbors
